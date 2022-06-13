@@ -1,0 +1,28 @@
+.Moods {
+  grid-column: 2 / 3;
+  grid-row: 3 / 5;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  padding: 20px;
+}
+
+.MoodWrapper {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  padding: 5px;
+  position: relative;
+}
+
+.MoodWrapperSelected:after {
+  font: normal normal normal 14px/1 FontAwesome;
+  content: "\f00c";
+  position: absolute;
+  right: 75%;
+  top: 70%;
+}
+
+.Mood {
+  cursor: pointer;
+}
