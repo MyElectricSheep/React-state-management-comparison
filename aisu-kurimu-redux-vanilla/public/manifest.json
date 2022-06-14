@@ -1,0 +1,8 @@
+{
+  "short_name": "Ice Cream Please",
+  "name": "Simple Introduction to React and Redux",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

@@ -1,0 +1,19 @@
+.Moods {
+  grid-column: 2 / 3;
+  grid-row: 3 / 5;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  padding: 20px;
+}
+
+.MoodWrapper {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.Mood {
+  cursor: pointer;
+}
