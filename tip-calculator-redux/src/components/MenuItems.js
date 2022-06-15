@@ -2,7 +2,7 @@ import { Stack } from '@twilio-paste/stack';
 import { MenuItemContainer } from '../containers/MenuItemContainer';
 
 export const MenuItems = ({ items }) => {
-  const sortItem = (a, b) => {
+  const sortItems = (a, b) => {
     const nameA = a.name.toUpperCase();
     const nameB = b.name.toUpperCase();
     if (nameA < nameB) {
@@ -13,9 +13,10 @@ export const MenuItems = ({ items }) => {
     }
     return 0;
   };
+  const sortedItems = [...items].sort(sortItems);
   return (
     <Stack orientation="vertical" spacing="space60">
-      {items.sort(sortItem).map((item) => (
+      {sortedItems.map((item) => (
         <MenuItemContainer {...item} key={item.uuid} />
       ))}
     </Stack>
