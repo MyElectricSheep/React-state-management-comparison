@@ -12,9 +12,7 @@ import './index.css';
 ReactDOM.render(
   <Provider store={store}>
     <Theme.Provider theme="default">
-      <React.StrictMode>
-        <Application />
-      </React.StrictMode>
+      <Application />
     </Theme.Provider>
   </Provider>,
   document.getElementById('root')
